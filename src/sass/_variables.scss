@@ -1,0 +1,25 @@
+:root {
+
+	--color-primary: #563E2F;
+	--color-secondary: #8B6B63;
+	--color-tertiary: #EDEBE7;
+	--color-fourty: #D7CBBD;
+
+	--scale: 1.618;
+	--font-xs: .8rem;
+  --font-sm: 1rem;
+  --font-md: calc(var(--font-sm) * var(--scale));
+  --font-lg: calc(var(--font-md) * var(--scale));
+  --font-xl: calc(var(--font-lg) * var(--scale));
+  --font-xlg: calc(var(--font-xl) * var(--scale));
+
+	font-size: 100%;
+
+	--font-primary: 'CircularStd';
+	--font-secondary: '';
+
+	--box-shadow: 0 11px 25px rgba(0,0,0,.07);
+	--box-shadow-hover: 0 11px 25px rgba(0,0,0,.2);
+	--border-radius: .8em;
+
+}

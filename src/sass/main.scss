@@ -1,10 +1,15 @@
 @charset "utf-8";
 
-@import 'reset';
 @import 'fonts';
 @import 'variables';
 @import 'mixins';
 @import 'base';
 @import 'helpers';
 
-// @import 'organisms/introduction.scss';
+@import 'organisms/navbar';
+@import 'organisms/hero';
+@import 'organisms/sidebar-nav';
+@import 'organisms/workflow';
+@import 'organisms/offer';
+@import 'organisms/feedback';
+@import 'organisms/footer';

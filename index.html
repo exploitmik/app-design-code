@@ -1,14 +1,172 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta charset="utf-8">
-	<title></title>
+	<title>App Design</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<link rel="stylesheet" href="dist/main.css">
 </head>
 <body>
+
+	<header class="navbar">
+		<nav class="navbar__nav">
+			<i class="fas fa-bars"></i>
+		</nav>
+		<div class="container navbar__content">
+			<p class="navbar__brand">Dongi</p>
+			<button class="navbar__action">Sing Up</button>
+		</div>
+	</header>
+
+	<section class="sidebar-nav">
+		<div class="sidebar-nav__content">
+			<div class="sidebar-nav__number">01</div>
+			<div class="sidebar-nav__number">02</div>
+			<div class="sidebar-nav__number">03</div>
+		</div>
+	</section>
+
+	<section class="hero">
+		<div class="container hero__content">
+			<div class="hero__smartphone"></div>
+			<div class="hero__wrapper">
+				<h1 class="hero__title">We build apps that users love.</h1>
+				<button class="hero__action">Video - 5 min</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="workflow">
+		<div class="container workflow__content">
+			<h1 class="workflow__title">How it Works</h1>
+			<div class="workflow__body">
+				<div class="workflow__wrapper">
+					<figure class="workflow__figure">
+						<img src="dist/images/coffee.svg" alt="" class="workflow__image">
+					</figure>
+					<p class="workflow__describe">Idea Maker</p>
+					<p class="workflow__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo accusamus quaerat vel, sapiente nesciunt omnis repudiandae.</p>
+				</div>
+
+				<div class="workflow__wrapper">
+					<figure class="workflow__figure">
+						<img src="dist/images/eye.svg" alt="" class="workflow__image">
+					</figure>
+					<p class="workflow__describe">Eye Caseing</p>
+					<p class="workflow__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo accusamus quaerat vel, sapiente nesciunt omnis repudiandae.</p>
+				</div>
+
+				<div class="workflow__wrapper">
+					<figure class="workflow__figure">
+						<img src="dist/images/heart.svg" alt="" class="workflow__image">
+					</figure>
+					<p class="workflow__describe">User Friendly</p>
+					<p class="workflow__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo accusamus quaerat vel, sapiente nesciunt omnis repudiandae.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="offer">
+		<div class="container offer__content">
+
+			<div class="offer__body">
+				<div class="offer__wrapper">
+					<p class="offer__title">Take the best offer and buy your Apps through that store.</p>
+					<p class="offer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sit beatae quod eos excepturi soluta suscipit, aliquid, sint doloribus.</p>
+					<button class="offer__action">Download App</button>
+				</div>
+				<div class="offer__smartphone"></div>
+			</div>
+
+			<div class="offer__body">
+				<div class="offer__wrapper">
+					<p class="offer__title">Market release social media seed money entrepreneur iPhone.</p>
+					<p class="offer__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus sit beatae quod eos excepturi soluta suscipit, aliquid, sint doloribus.</p>
+					<button class="offer__action">Get Started</button>
+				</div>
+				<div class="offer__figure">
+					<img src="https://i.picsum.photos/id/454/500/700.jpg" alt="" class="offer__image">
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="feedback">
+		<div class="container feedback__content">
+			<h1 class="feedback__title">User Feedback</h1>
+			<p class="feedback__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quis rerum aut aliquid. Rerum quos hic similique blanditiis illo eos nobis distinctio ipsa dolores quibusdam natus, veniam molestias rem quas.</p>
+			<figure class="feedback__figure">
+				<img src="https://i.pravatar.cc/150?img=4" alt="" class="feedback__image">
+			</figure>
+			<button class="feedback__btn feedback__btn--prev" role="button" aria-label="Previous"></button>
+			<button class="feedback__btn feedback__btn--next" role="button" aria-label="Next"></button>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__apps">
+			<figure class="footer__figure">
+				<img src="dist/images/btn-google.png" alt="" class="footer__image">
+			</figure>
+			<figure class="footer__figure">
+				<img src="dist/images/app-store-badge.png" alt="" class="footer__image">
+			</figure>
+		</div>
+		<div class="container footer__content">
+			<div class="footer__left">
+				<p class="footer__brand">Dongi</p>
+				<ul class="footer__items footer__items--left">
+					<li class="footer__item">
+						<a href="#" class="footer__link">Home</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">How it works</a>
+					</li>
+					<li class="footer__item">
+						<a href="#" class="footer__link">Contact</a>
+					</li>
+				</ul>
+				<p class="footer__description">
+					1090 Berden street. Westhum.
+					<br>London, United Kingdom
+					<br><br>
+					Email: dongiapp@gmail.com
+				</p>
+			</div>
+			<div class="footer__right">
+				<p class="footer__label">Join our mailing list</p>
+				<div class="footer__form">
+					<input type="text" class="footer__input" placeholder="Enter you email address">
+					<input type="submit" class="footer__submit" value="Go">
+				</div>
+				<div class="footer__network">
+					<p class="footer__social-title">Social Networks</p>
+					<ul class="footer__items">
+						<li class="footer__item">
+							<i class="fab fa-twitter"></i>
+						</li>
+						<li class="footer__item">
+							<i class="fab fa-pinterest"></i>
+						</li><li class="footer__item">
+							<i class="fab fa-facebook-f"></i>
+						</li><li class="footer__item">
+							<i class="fab fa-instagram"></i>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<section class="copyright">
+		<div class="container">
+			<p class="copyright__paragraph">Copyright &copy 2020. All Right Reserved.</p>
+		</div>
+	</section>
+
 	<script src="dist/bundler.js"></script>
+
 </body>
 </html>

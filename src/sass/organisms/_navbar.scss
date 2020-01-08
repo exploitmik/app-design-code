@@ -1,0 +1,42 @@
+.navbar {
+	padding: 1.5em 0;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 20;
+
+	&__nav {
+		position: relative;
+		left: 3.2em;
+	}
+
+	&__nav i {
+		font-size: 120%;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__brand {
+		font-weight: 600;
+		letter-spacing: .04em;
+		color: var(--color-primary);
+	}
+
+	&__action {
+		padding: .6em 1.6em;
+		background-color: #fff;
+		border: none;
+		outline: none;
+		color: var(--color-primary);
+		border-radius: 3px;
+		font-weight: 500;
+		font-family: inherit;
+		cursor: pointer;
+	}
+}

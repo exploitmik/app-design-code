@@ -11,3 +11,17 @@
     max-width: 1200px;
   }
 }
+
+%circle-repeat {
+  --columns: 4;
+  --rows: 10;
+  --size: 24px;
+  background-image: radial-gradient(ellipse, var(--color-fourty) 0%, var(--color-fourty) 35%, transparent 35%);
+  background-size: var(--size) var(--size);
+  background-repeat: repeat;
+  width: calc(var(--columns) * var(--size));
+  height: calc(var(--rows) * var(--size));
+  display: block;
+  position: absolute;
+  opacity: .2;
+}

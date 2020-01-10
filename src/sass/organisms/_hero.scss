@@ -28,6 +28,14 @@
 		align-items: end;
 		column-gap: 7em;
 		height: 100%;
+
+		@media (max-width: 862px){
+			grid-template-columns: 320px;
+			justify-content: center;
+			column-gap: 0;
+			align-items: end;
+		}
+
 	}
 
 	&__smartphone {
@@ -39,7 +47,7 @@
 	  box-shadow: 0 6px 25px rgba(0,0,0, .07);
 	  position: relative;
 	  bottom: -9rem;
-	  background-image: url(https://i.picsum.photos/id/234/500/700.jpg);
+	  background-image: url(https://i.picsum.photos/id/222/500/700.jpg);
 	  background-size: cover;
 	  overflow: hidden;
 
@@ -59,10 +67,25 @@
 			width: 90%;
 	  	height: 520px;
 	  }
+
+	  @media (max-width: 862px){
+	  	order: 1;
+	  	left: 50%;
+	  	transform: translateX(-50%);
+	  	bottom: -2em;
+	  	width: 76%;
+	  	height: 460px;
+	  }
 	}
 
 	&__wrapper {
 		padding-bottom: 20%;
+
+		@media (max-width: 862px){
+			text-align: center;
+			padding-bottom: 0;
+			padding-top: 20%;
+		}
 	}
 
 	&__title {
@@ -71,6 +94,10 @@
 		max-width: 460px;
 		line-height: 1;
 		font-weight: 600;
+
+		@media (max-width: 862px){
+			font-size: var(--font-lg);
+		}
 	}
 
 	&__action {

@@ -3,6 +3,24 @@
 	padding: 8em 0 2em 0;
 	text-align: center;
 	border-top-left-radius: 5em;
+	position: relative;
+
+	&::before, &::after {
+		content: '';
+		@extend %circle-repeat;
+	}
+
+	&::before {
+		top: 0;
+		left: -.5em;
+		--rows: 6;
+	}
+
+	&::after {
+		bottom: 0;
+		right: 0;
+		--rows: 6;
+	}
 
 	&__title {
 		text-shadow:
@@ -14,6 +32,10 @@
 	  font-size: var(--font-xlg);
 	  color: var(--color-primary);
 	  line-height: 1;
+
+	  @media (max-width: 768px){
+	  	font-size: var(--font-lg);
+	  }
 	}
 
 	&__description {
@@ -35,6 +57,14 @@
 			display: block;
 			position: absolute;
 			bottom: -.1em;
+
+			@media (max-width: 480px){
+				bottom: 35%;
+			}
+		}
+
+		@media (max-width: 768px){
+			max-width: 90%;
 		}
 	}
 

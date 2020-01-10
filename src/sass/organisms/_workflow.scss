@@ -1,6 +1,29 @@
 .workflow {
 	background-color: var(--color-primary);
 	padding-top: 10em;
+	position: relative;
+	border-bottom-right-radius: 6em;
+
+	&::before, &::after {
+		content: '';
+		@extend %circle-repeat;
+	}
+
+	&::before {
+		bottom: 4em;
+		left: -.5em;
+
+		@media (max-width: 862px){
+			top: 0;
+			--rows: 8;
+		}
+	}
+
+	&::after {
+		--rows: 6;
+		right: 0;
+		bottom: 0;
+	}
 
 	&__title {
 	  text-shadow:
@@ -14,12 +37,16 @@
 	  line-height: 1;
 	  position: relative;
 	  top: 7rem;
+
+	  @media (max-width: 862px){
+	  	font-size: var(--font-lg);
+	  }
 	}
 
 	&__body {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-		column-gap: 2.5em;
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+		gap: 2.5em;
 		position: relative;
 		top: 10rem;
 	}

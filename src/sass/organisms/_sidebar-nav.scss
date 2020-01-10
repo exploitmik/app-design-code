@@ -12,6 +12,9 @@
 		align-content: center;
 		justify-content: center;
 		position: relative;
+		@media (max-width: 1024px){
+			display: none;
+		}
 	}
 
 	&__number {

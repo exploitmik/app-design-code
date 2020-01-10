@@ -1,5 +1,9 @@
 :root {
 	font-family: var(--font-primary);
+
+	@media (max-width: 960px){
+		font-size: 90%;
+	}
 }
 
 *,

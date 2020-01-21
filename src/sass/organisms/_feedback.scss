@@ -90,7 +90,8 @@
 		background-color: transparent;
 		border: 2px solid var(--color-fourty);
 		border-radius: 50%;
-		display: grid;
+		display: flex;
+		align-items: center;
 		cursor: pointer;
 		outline: none;
 		transition: .4s ease-out;
@@ -103,7 +104,6 @@
 			height: .8rem;
 			border-right: 2px solid var(--color-fourty);
 			border-bottom: 2px solid var(--color-fourty);
-			display: block;
 		}
 
 		&:hover {
